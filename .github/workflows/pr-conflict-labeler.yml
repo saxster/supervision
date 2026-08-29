@@ -9,9 +9,6 @@ on:
   # So that the `dirtyLabel` is removed if conflicts are resolved
   # We recommend `pull_request_target` so that github secrets are available.
   # In `pull_request` we wouldn't be able to change labels of fork PRs
-  pull_request_target:
-    types: [synchronize]
-
 permissions:
   pull-requests: write
   issues: write
