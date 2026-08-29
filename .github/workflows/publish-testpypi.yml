@@ -1,13 +1,9 @@
 name: Publish Supervision Releases to TestPyPI
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-  pull_request:
-    branches: [main, develop]
-    paths:
-      - ".github/workflows/build-package.yml"
-      - ".github/workflows/publish-testpypi.yml"
-
 permissions: {} # Explicitly remove all permissions by default
 
 jobs:
